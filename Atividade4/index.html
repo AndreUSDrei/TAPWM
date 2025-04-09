@@ -1,0 +1,53 @@
+<!-- Andreus Vinícius Araújo de Andrade -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    
+    <!-- Calculadora de Média -->
+    <div>
+        <h2>Média de 3 Notas</h2>
+        <input type="number" id="nota1" placeholder="Nota 1">
+        <input type="number" id="nota2" placeholder="Nota 2">
+        <input type="number" id="nota3" placeholder="Nota 3">
+        <button onclick="calcularMedia()">Calcular</button>
+        <p>Resultado: <span id="resultado-media">0</span></p>
+    </div>
+    
+    <!-- Calculadora Básica -->
+    <div>
+        <h2>Calculadora</h2>
+        <input type="text" id="display" readonly>
+        <br>
+        <button onclick="adicionarNumero('7')">7</button>
+        <button onclick="adicionarNumero('8')">8</button>
+        <button onclick="adicionarNumero('9')">9</button>
+        <button onclick="operar('+')">+</button>
+        <br>
+        <button onclick="adicionarNumero('4')">4</button>
+        <button onclick="adicionarNumero('5')">5</button>
+        <button onclick="adicionarNumero('6')">6</button>
+        <button onclick="operar('-')">-</button>
+        <br>
+        <button onclick="adicionarNumero('1')">1</button>
+        <button onclick="adicionarNumero('2')">2</button>
+        <button onclick="adicionarNumero('3')">3</button>
+        <button onclick="operar('*')">*</button>
+        <br>
+        <button onclick="adicionarNumero('0')">0</button>
+        <button onclick="adicionarNumero('.')">.</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="operar('/')">/</button>
+        <br>
+        <button onclick="limpar()">Limpar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
