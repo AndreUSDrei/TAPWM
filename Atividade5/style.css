@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .choices {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  button img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+  }
+  
+  button:hover img {
+    transform: scale(1.1);
+  }
+  
+  .resultado {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #444;
+  }
+  
+  .comparacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+  }
+  
+  .comparacao p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .comparacao img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .vs {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  /* Esconde a comparação até que o usuário jogue */
+  .oculto {
+    display: none;
+  }
+  
