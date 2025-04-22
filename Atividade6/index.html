@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Opinião</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Pesquisa de Opinião</h1>
+
+        <form id="formulario">
+            <input type="number" name="idade" placeholder="Idade" required>
+            <select name="sexo" required>
+                <option value="">Sexo</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outros">Outros</option>
+            </select>
+            <select name="opiniao" required>
+                <option value="">Opinião</option>
+                <option value="4">Ótimo</option>
+                <option value="3">Bom</option>
+                <option value="2">Regular</option>
+                <option value="1">Péssimo</option>
+            </select>
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <button class="resultado-btn" onclick="mostrarResultados()">Mostrar Resultados</button>
+
+        <section id="resultados"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
